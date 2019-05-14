@@ -21,4 +21,13 @@ export class AppComponent {
       }
     }
   }
+
+  todoSubmit(value:any){
+    if(value!==""){
+    this.todoArray.push(value.todo)
+      //this.todoForm.reset()
+    }else{
+      alert('Field required **')
+    }
+  }
 }
